@@ -1,10 +1,10 @@
 import { features } from "../constants";
+import Bg from "./Bg";
 
 const Feature = () => {
   return (
     <section className="relative mt-20 min-h-[800px] bg-transparent backdrop-blur-sm">
-      {/* glowing gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-orange-900/10 via-transparent to-black/60 pointer-events-none"></div>
+      <Bg />
 
       <div className="relative text-center z-10">
         {/* Tag */}
@@ -15,7 +15,7 @@ const Feature = () => {
         {/* Heading */}
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide font-bold">
           Easily build{" "}
-          <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 text-transparent bg-clip-text">
+          <span className="bg-linear-to-r from-orange-400 via-orange-500 to-red-500 text-transparent bg-clip-text">
             your code
           </span>
         </h2>
